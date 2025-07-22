@@ -16,7 +16,7 @@ public class CountNum {
         // System.out.println("Total number of digits: " + count);
 
 
-        
+
         // while ( num>0 ) {
         //    count = count + num % 10; 
         //     num = num / 10;
@@ -25,10 +25,20 @@ public class CountNum {
 
 
 
-        while (num > 0) {
-            count = count * 10 + num % 10;
-            num /= 10;
+        // while (num > 0) {
+        //     count = count * 10 + num % 10;
+        //     num /= 10;
+        // }
+        // System.out.println("Reversed number: " + count);
+
+
+        for(int i = 1; i <= num; i++) {
+            if(i%2==0) {
+                count -= i;
+            } else {
+                count += i;
+            }
         }
-        System.out.println("Reversed number: " + count);
+        System.out.println("Final count after processing numbers: " + count);
     }
 }
