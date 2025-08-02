@@ -5,9 +5,23 @@ public class methods {
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
     }
+    static int add(int a, int b) {
+        return a + b;
+    }
+    static void swap(int a, int b) {
+        System.out.println("Before swapping: a = " + a + ", b = " + b);
+        int temp = a;
+        a = b;
+        b = temp;
+        System.out.println("After swapping: a = " + a + ", b = " + b);
+    }
+
+
+
     public static void main(String[] args) {
-        methods.name("Bhushan Kumar", 22);
         // Calling the method with parameters
-        methods.name("John Doe", 30);
+        // name("Bhushan Kumar", 22);
+        // System.out.println("Sum: " + add(25, 10));
+        swap(5, 10);
     }
 }
